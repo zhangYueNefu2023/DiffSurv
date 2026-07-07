@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diffsurv"
+version = "0.1.0"
+description = "Drop-and-Replace diffusion framework for robust multi-omics survival prediction."
+requires-python = ">=3.9"
+dependencies = [
+  "torch>=2.0",
+  "numpy>=1.23",
+  "pandas>=1.5",
+  "scikit-learn>=1.2",
+  "tqdm>=4.64",
+  "PyYAML>=6.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
